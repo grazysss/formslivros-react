@@ -14,7 +14,7 @@ function FormularioLivro() {
   function enviarRespostas(evento) {
     evento.preventDefault()
 
-    const novoLivro = { titulo, autor, ano, genero }
+    const novoLivro = { id: Date.now(), titulo, autor, ano, genero }
     setLivros([...livros, novoLivro])
 
     setTitulo('')
@@ -74,7 +74,7 @@ function FormularioLivro() {
 
         <ul>
           {livros.map((livro) => (
-            <Livro key={livro.titulo} livro={livro} />
+            <Livro key={livro.id} livro={livro} />
           ))}
         </ul>
       </div>
