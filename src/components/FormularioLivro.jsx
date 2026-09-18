@@ -32,16 +32,17 @@ function FormularioLivro() {
           label="Título"
           name="titulo"
           value={titulo}
-          onChange={(evento) => setNome(evento.target.value)}
+          type="text"
+          onChange={(evento) => setTitulo(evento.target.value)}
           placeholder="Ex: O Senhor dos Anéis"
         />
 
         <CampoTexto
           label="Autor"
           name="autor"
-          type="name"
+          type="text"
           value={autor}
-          onChange={(evento) => setEmail(evento.target.value)}
+          onChange={(evento) => setAutor(evento.target.value)}
           placeholder="Ex: J.R.R. Tolkien"
         />
 
@@ -49,7 +50,7 @@ function FormularioLivro() {
           label="Ano de Publicação"
           name="ano"
           value={ano}
-          onChange={(evento) => setCpf(evento.target.value)}
+          onChange={(evento) => setAno(evento.target.value)}
           placeholder="1954"
         />
 
@@ -57,12 +58,14 @@ function FormularioLivro() {
           label="Gênero"
           name="genero"
           value={genero}
-          onChange={(evento) => setCidade(evento.target.value)}
+          onChange={(evento) => setGenero(evento.target.value)}
           placeholder="Ex: Fantasia"
         />
 
         <button type="submit">Cadastrar</button>
       </form>
+
+      <br />
 
       <div className="formulario-livro-lista">
         <h2>Livros cadastrados</h2>
@@ -71,7 +74,7 @@ function FormularioLivro() {
 
         <ul>
           {livros.map((livro) => (
-            <Livro key={livro.cpf} livro={livro} />
+            <Livro key={livro.titulo} livro={livro} />
           ))}
         </ul>
       </div>
