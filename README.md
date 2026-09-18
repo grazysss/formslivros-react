@@ -1,9 +1,9 @@
-📚 Cadastro de Livros — IFRN Campus Pau dos Ferros
+# 📚 Cadastro de Livros — IFRN Campus Pau dos Ferros
 
 Projeto desenvolvido para a disciplina de Programação para Internet, como exercício de aprendizagem de componentes reutilizáveis, props e estado (`useState`) em React.
 A aplicação permite cadastrar livros informando título, autor, ano de publicação e gênero, exibindo em seguida a lista de livros cadastrados.
 
-🎯 Objetivo
+## 🎯 Objetivo
 Construir uma aplicação React de cadastro de livros, aplicando os conceitos de componentes reutilizáveis, `props` (sem desestruturação no parâmetro da função) e estado local com `useState`, seguindo a mesma estrutura do projeto de cadastro de alunos visto em aula.
 
 🛠️ Tecnologias utilizadas
@@ -14,7 +14,7 @@ Construir uma aplicação React de cadastro de livros, aplicando os conceitos de
 * HTML
 * CSS
 
-📄 Funcionalidades do projeto
+## 📄 Funcionalidades do projeto
 
 📝 Formulário de cadastro
  Permite preencher os campos **Título**, **Autor**, **Ano de publicação** e **Gênero**. Cada campo é controlado por um `useState` próprio, através do componente reutilizável `CampoTexto`.
@@ -28,7 +28,7 @@ Construir uma aplicação React de cadastro de livros, aplicando os conceitos de
  Caso nenhum livro tenha sido cadastrado ainda, é exibida a mensagem:
  `Nenhum livro cadastrado ainda.`
 
-🖼️ Print da aplicação
+## 🖼️ Print da aplicação
 
 ![alt text](image.png)
 
