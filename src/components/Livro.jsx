@@ -1,7 +1,7 @@
-function Livro({ livro }) {
+function Livro(props) {
     return (
         <li className="livro">
-            <p><b>{livro.titulo}</b> - {livro.autor} ({livro.ano}) | Gênero: {livro.genero}</p>
+            <p><b>{props.livro.titulo}</b> - {props.livro.autor} ({props.livro.ano}) | Gênero: {props.livro.genero}</p>
         </li>
     )
 }

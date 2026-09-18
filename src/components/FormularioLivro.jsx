@@ -29,8 +29,7 @@ function FormularioLivro() {
 
       <form onSubmit={enviarRespostas}>
         <CampoTexto
-          label="Título"
-          name="titulo"
+          name="Título"
           value={titulo}
           type="text"
           onChange={(evento) => setTitulo(evento.target.value)}
@@ -38,8 +37,7 @@ function FormularioLivro() {
         />
 
         <CampoTexto
-          label="Autor"
-          name="autor"
+          name="Autor"
           type="text"
           value={autor}
           onChange={(evento) => setAutor(evento.target.value)}
@@ -47,16 +45,14 @@ function FormularioLivro() {
         />
 
         <CampoTexto
-          label="Ano de Publicação"
-          name="ano"
+          name="Ano de Publicação"
           value={ano}
           onChange={(evento) => setAno(evento.target.value)}
           placeholder="1954"
         />
 
         <CampoTexto
-          label="Gênero"
-          name="genero"
+          name="Gênero"
           value={genero}
           onChange={(evento) => setGenero(evento.target.value)}
           placeholder="Ex: Fantasia"

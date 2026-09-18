@@ -5,7 +5,7 @@ import './CampoTexto.css'
 function CampoTexto(props) {
   return (
     <div className="campo-texto">
-      <label htmlFor={props.name}>{label}</label>
+      <label htmlFor={props.name}>{props.name}</label>
       <input 
         id={props.name} 
         name={props.name}

@@ -20,12 +20,12 @@
   border: 2px solid transparent;
   cursor: pointer;
   color: var(--accent);
-  background: var(--accent-bg);
+  background-color: rgb(113, 12, 12);
   transition: border-color 0.3s;
 }
 
 .formulario-aluno form button:hover {
-  border-color: var(--accent-border);
+  border-color: rgb(33, 33, 33);
 }
 
 .formulario-aluno-lista {

@@ -15,12 +15,13 @@
   font: inherit;
   padding: 10px 12px;
   border-radius: 6px;
-  border: 1px solid var(--border);
-  background: var(--bg);
-  color: var(--text-h);
+  border: 1px solid rgb(113, 12, 12);
+  background: rgba(69, 69, 69, 0.2);
+  color: #FFFF;
 }
 
 .campo-texto input:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid #FFFF;
   outline-offset: 1px;
 }
+
