@@ -65,13 +65,13 @@ function FormularioLivro() {
       </form>
 
       <div className="formulario-livro-lista">
-        <h2>Alunos cadastrados</h2>
+        <h2>Livros cadastrados</h2>
 
-        {alunos.length === 0 && <p>Nenhum aluno cadastrado ainda.</p>}
+        {livros.length === 0 && <p>Nenhum livro cadastrado ainda.</p>}
 
         <ul>
-          {alunos.map((aluno) => (
-            <Aluno key={aluno.cpf} aluno={aluno} />
+          {livros.map((livro) => (
+            <Livro key={livro.cpf} livro={livro} />
           ))}
         </ul>
       </div>
