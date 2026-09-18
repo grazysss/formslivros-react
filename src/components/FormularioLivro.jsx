@@ -37,34 +37,34 @@ function FormularioLivro() {
         />
 
         <CampoTexto
-          label="E-mail"
-          name="email"
-          type="email"
-          value={email}
+          label="Autor"
+          name="autor"
+          type="name"
+          value={autor}
           onChange={(evento) => setEmail(evento.target.value)}
-          placeholder="Ex: maria@email.com"
+          placeholder="Ex: J.R.R. Tolkien"
         />
 
         <CampoTexto
-          label="CPF"
-          name="cpf"
-          value={cpf}
+          label="Ano de Publicação"
+          name="ano"
+          value={ano}
           onChange={(evento) => setCpf(evento.target.value)}
-          placeholder="000.000.000-00"
+          placeholder="1954"
         />
 
         <CampoTexto
-          label="Cidade"
-          name="cidade"
-          value={cidade}
+          label="Gênero"
+          name="genero"
+          value={genero}
           onChange={(evento) => setCidade(evento.target.value)}
-          placeholder="Ex: Natal"
+          placeholder="Ex: Fantasia"
         />
 
         <button type="submit">Cadastrar</button>
       </form>
 
-      <div className="formulario-aluno-lista">
+      <div className="formulario-livro-lista">
         <h2>Alunos cadastrados</h2>
 
         {alunos.length === 0 && <p>Nenhum aluno cadastrado ainda.</p>}
